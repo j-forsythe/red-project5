@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.site-header {
+  background: $color__background-screen;
+  padding-top: 2rem;
+
+  .site-branding {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1rem;
+      border: $border__solid;
+      background: $color__background-body;
+    img {
+      width: 300px;
+    }
+    .header-social {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      color: $brand_color_mgrey;
+      li {
+        margin: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+// Structure
+
+$base__space-unit: 1.5em;
+
+// Colors
+
+$color__background-body: #ffffff;
+$color__text-main: #222222;
+
+$color__background-screen: #fafafa;
+$color__text-screen: #21759b;
+
+$color__background-hr: #ccc;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+$color__border-abbr: #666;
+
+$color__link: royalblue;
+$color__link-visited: purple;
+$color__link-hover: midnightblue;
+
+$brand_color_red: #db272a;
+$brand_color_brown: #400c0d;
+$brand_color_lgrey: #a1a1a1;
+$brand_color_mgrey: #808080;
+$brand_color_dgrey: #333333;
+$brand_color_blackish: #222222;
+
+// Typography
+
+$font__main: 'Open sans', sans-serif;
+$font__accent: 'Overlock';
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+
+// Borders
+
+$border__solid: 1px solid #e1e1e1;
+$border__dashed: 1px dashed #d2d2d2;
