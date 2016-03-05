@@ -9,11 +9,11 @@
   .site-branding {
       display: flex;
       justify-content: space-between;
-      padding: 0 1rem;
-      border: $border__solid;
+      padding: 0 5rem;
+      border-top: $border__solid;
       background: $color__background-body;
     img {
-      width: 300px;
+      width: 250px;
     }
     .header-social {
       list-style: none;
@@ -21,9 +21,62 @@
       justify-content: flex-end;
       align-items: center;
       color: $brand_color_mgrey;
+      margin: 0;
       li {
         margin: 1rem;
       }
     }
   }
+}
+
+.main-navigation {
+  background: $color__background-screen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  border-top: $border__solid;
+
+  .menu {
+    li {
+      padding: 0.5rem 1.5rem;
+      border-right: $border__solid;
+      height: 100%;
+      &:first-child {
+        border-left: $border__solid;
+      }
+    }
+    a {
+      font-weight: bold;
+      color: $brand_color_mgrey;
+      &:hover {
+        color: $brand_color_brown;
+      }
+    }
+  }
+}
+
+.search-form {
+  color: $brand_color_mgrey;
+  fieldset {
+    border: none;
+    padding: 0;
+    .search-field {
+      border: none;
+      background: transparent;
+      font-family: Open Sans;
+    }
+    .search-submit {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      font-size: 1rem;
+      color: $brand_color_mgrey;
+
+    }
+  }
+}
+
+.entry-title {
+  display: none;
 }
