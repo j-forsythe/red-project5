@@ -54,3 +54,14 @@
 	width: 1024px;
 	margin: 0 auto;
 }
+
+.site-content {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.content-area {
+	flex: 1 0 75%;
+	border-right: $border__solid;
+	padding: 3rem 3rem 3rem 0;
+}

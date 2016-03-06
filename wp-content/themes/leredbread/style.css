@@ -460,7 +460,8 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: royalblue;
+  text-decoration: none; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -649,6 +650,21 @@ a {
   width: 1024px;
   margin: 0 auto; }
 
+.site-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.content-area {
+  -webkit-flex: 1 0 75%;
+      -ms-flex: 1 0 75%;
+          flex: 1 0 75%;
+  border-right: 1px solid #e1e1e1;
+  padding: 3rem 3rem 3rem 0; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -750,7 +766,8 @@ object {
 
 .main-navigation {
   background: #fafafa;
-  border-top: 1px solid #e1e1e1; }
+  border-top: 1px solid #e1e1e1;
+  box-shadow: 0 2px 5px 0 rgba(128, 125, 131, 0.42); }
   .main-navigation .navigation {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -789,9 +806,9 @@ object {
       font-size: 1rem;
       color: #808080; }
 
-.entry-title {
-  display: none; }
-
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 .site-footer {
   background: #222222;
   color: #ffffff;
@@ -836,3 +853,28 @@ object {
   .copy p {
     margin: 0;
     text-align: center; }
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+.widget-area {
+  -webkit-flex: 1 0 25%;
+      -ms-flex: 1 0 25%;
+          flex: 1 0 25%;
+  padding-left: 2rem;
+  padding-top: 3rem; }
+
+/*--------------------------------------------------------------
+# Posts
+--------------------------------------------------------------*/
+.entry-title {
+  font-family: Overlock;
+  margin: 0; }
+  .entry-title a {
+    color: #db272a; }
+    .entry-title a:hover {
+      text-decoration: underline;
+      color: #400c0d; }
+
+.entry-meta {
+  color: #808080; }

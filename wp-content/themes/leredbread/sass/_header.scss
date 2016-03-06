@@ -7,13 +7,13 @@
   padding-top: 2rem;
 
   .site-branding {
-      border-top: $border__solid;
-      background: $color__background-body;
-      .logo{
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem 0;
-      }
+    border-top: $border__solid;
+    background: $color__background-body;
+    .logo{
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+    }
     img {
       width: 250px;
     }
@@ -34,6 +34,7 @@
 .main-navigation {
   background: $color__background-screen;
   border-top: $border__solid;
+  box-shadow: 0 2px 5px 0 rgba(128, 125, 131, 0.42);
   .navigation {
     display: flex;
     justify-content: space-between;
@@ -77,8 +78,4 @@
 
     }
   }
-}
-
-.entry-title {
-  display: none;
 }

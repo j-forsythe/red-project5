@@ -1,0 +1,19 @@
+/*--------------------------------------------------------------
+# Posts
+--------------------------------------------------------------*/
+
+.entry-title {
+  font-family: Overlock;
+  margin: 0;
+  a {
+    color: $brand_color_red;
+    &:hover {
+      text-decoration: underline;
+      color: $brand_color_brown;
+    }
+  }
+}
+
+.entry-meta {
+  color: $brand_color_mgrey;
+}
