@@ -23,21 +23,27 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<img src="<?php echo get_template_directory_uri() .'./assets/images/lrb-logo.svg' ?>" alt="Le Red Bread Logo" />
-					<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p> -->
-					<ul class="header-social">
-						<li><i class="fa fa-facebook"></i></li>
-						<li><i class="fa fa-twitter"></i></li>
-						<li><i class="fa fa-google-plus"></i></li>
-						<li><i class="fa fa-envelope"></i></li>
-					</ul>
+					<div class="logo container">
+						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<a href="<?php home_url(); ?>">
+							<img src="<?php echo get_template_directory_uri() .'./assets/images/lrb-logo.svg' ?>" alt="Le Red Bread Logo" />
+						</a>
+						<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p> -->
+						<ul class="header-social">
+							<li><i class="fa fa-facebook"></i></li>
+							<li><i class="fa fa-twitter"></i></li>
+							<li><i class="fa fa-google-plus"></i></li>
+							<li><i class="fa fa-envelope"></i></li>
+						</ul>
+					</div>
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<div class="navigation container">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					<?php get_search_form(); ?>
+					</div>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

@@ -1,0 +1,54 @@
+.site-footer {
+  background: $brand_color_blackish;
+  color: $color__background-body;
+  line-height: 1rem;
+  .site-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    font-size: 1rem;
+    h3 {
+      font-family: Overlock;
+      text-transform: uppercase;
+      color: $brand_color_mgrey;
+      margin-bottom: 0.75rem;
+    }
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.contact-info {
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-logo {
+  img {
+    width: 250px;
+  }
+}
+
+.business-hours {
+  span {
+    font-weight: bold;
+  }
+}
+
+.copy {
+  background: $brand_color_dgrey;
+  padding: 1rem;
+  font-size: 0.75rem;
+  margin: 0;
+  p {
+    margin: 0;
+    text-align: center;
+  }
+}

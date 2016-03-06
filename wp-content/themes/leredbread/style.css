@@ -644,6 +644,11 @@ a {
 .bypostauthor {
   display: block; }
 
+/* Container */
+.container {
+  width: 1024px;
+  margin: 0 auto; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -715,15 +720,16 @@ object {
   background: #fafafa;
   padding-top: 2rem; }
   .site-header .site-branding {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 0 5rem;
     border-top: 1px solid #e1e1e1;
     background: #ffffff; }
+    .site-header .site-branding .logo {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 1rem 0; }
     .site-header .site-branding img {
       width: 250px; }
     .site-header .site-branding .header-social {
@@ -744,17 +750,17 @@ object {
 
 .main-navigation {
   background: #fafafa;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 5rem;
   border-top: 1px solid #e1e1e1; }
+  .main-navigation .navigation {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .main-navigation .menu li {
     padding: 0.5rem 1.5rem;
     border-right: 1px solid #e1e1e1;
@@ -785,3 +791,48 @@ object {
 
 .entry-title {
   display: none; }
+
+.site-footer {
+  background: #222222;
+  color: #ffffff;
+  line-height: 1rem; }
+  .site-footer .site-info {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem 0;
+    font-size: 1rem; }
+    .site-footer .site-info h3 {
+      font-family: Overlock;
+      text-transform: uppercase;
+      color: #808080;
+      margin-bottom: 0.75rem; }
+    .site-footer .site-info p {
+      margin-bottom: 0.5rem; }
+
+.contact-info a {
+  color: white;
+  text-decoration: none; }
+  .contact-info a:hover {
+    text-decoration: underline; }
+
+.footer-logo img {
+  width: 250px; }
+
+.business-hours span {
+  font-weight: bold; }
+
+.copy {
+  background: #333333;
+  padding: 1rem;
+  font-size: 0.75rem;
+  margin: 0; }
+  .copy p {
+    margin: 0;
+    text-align: center; }
