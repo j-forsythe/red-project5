@@ -650,15 +650,17 @@ a {
   width: 1024px;
   margin: 0 auto; }
 
-.site-content {
+.blog .site-content {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1024px;
+  margin: 0 auto; }
 
-.content-area {
+.blog .content-area {
   -webkit-flex: 1 0 75%;
       -ms-flex: 1 0 75%;
           flex: 1 0 75%;
@@ -878,3 +880,42 @@ object {
 
 .entry-meta {
   color: #808080; }
+
+/*--------------------------------------------------------------
+# Front-Page
+--------------------------------------------------------------*/
+.home {
+  border: none; }
+  .home .hero-banner {
+    background: url("../../assets/images/hero-bread.jpg") center top no-repeat;
+    background-size: cover;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 550px;
+    width: 100vw; }
+    .home .hero-banner h1 {
+      font-family: Overlock;
+      color: #ffffff;
+      font-size: 5rem;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 2px 3px 2px #333333; }
+
+.product-grid {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .product-grid .archive-product {
+    -webkit-flex: 1 0 25%;
+        -ms-flex: 1 0 25%;
+            flex: 1 0 25%; }

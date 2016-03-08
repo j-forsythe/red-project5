@@ -1,0 +1,32 @@
+/*--------------------------------------------------------------
+# Front-Page
+--------------------------------------------------------------*/
+
+.home {
+  border: none;
+  .hero-banner {
+   background:  url('../../assets/images/hero-bread.jpg') center top no-repeat;
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 550px;
+   width: 100vw;
+    h1 {
+      font-family: Overlock;
+      color: $color__background-body;
+      font-size: 5rem;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 2px 3px 2px $brand_color_dgrey;
+    }
+  }
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  .archive-product {
+    flex: 1 0 25%;
+  }
+}
