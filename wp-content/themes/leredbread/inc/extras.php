@@ -61,6 +61,13 @@ function lrb_modify_archive_loop( $query ) {
 }
 add_action('pre_get_posts', 'lrb_modify_archive_loop');
 
+function lrb_modify_testimonial_loop( $query ) {
+	if (is_post_type_archive( array('testimonial')) && !is_admin() && $query->is_main_query() ) {
+		$query->set( 'order', 'DESC' );
+	}
+}
+add_action('pre_get_posts', 'lrb_modify_testimonial_loop');
+
 /**
 *change archive titles based on post
 */

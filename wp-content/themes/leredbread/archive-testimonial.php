@@ -18,36 +18,28 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-			<div class="product-grid container">
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-
-      <div class="archive-product">
-        <?php if ( has_post_thumbnail() ) : ?>
-          <a href="<?php the_permalink() ?>" alt=""/>
-						<?php the_post_thumbnail( 'small' ); ?>
-					</a>
-        <?php endif; ?>
-
-        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-        <?php echo CFS()->get( 'price' ); ?>
-			</div><!-- archive-product -->
+				<?php
+					get_template_part( 'template-parts/content' );
+				?>
+        <?php echo CFS()->get( 'review' ); ?>
 
 
 			<?php endwhile; ?>
-			</div><!-- product-grid -->
+
+			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-			   <?php wp_reset_postdata(); ?>
 
 		<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

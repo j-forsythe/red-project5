@@ -650,7 +650,7 @@ a {
   width: 1024px;
   margin: 0 auto; }
 
-.blog .site-content {
+.blog .site-content, .single .site-content, .error404 .site-content, .page:not(.home) .site-content, .archive:not(.post-type-archive-product) .site-content {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -660,7 +660,7 @@ a {
   width: 1024px;
   margin: 0 auto; }
 
-.blog .content-area {
+.blog .content-area, .single .content-area, .error404 .content-area, .page:not(.home) .content-area, .archive:not(.post-type-archive-product) .content-area {
   -webkit-flex: 1 0 75%;
       -ms-flex: 1 0 75%;
           flex: 1 0 75%;
@@ -919,3 +919,39 @@ object {
     -webkit-flex: 1 0 25%;
         -ms-flex: 1 0 25%;
             flex: 1 0 25%; }
+
+.testimonial-grid {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .testimonial-grid .review {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 1 0 50%;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+    padding: 1rem; }
+    .testimonial-grid .review:first-child {
+      border-bottom: 1px dashed #d2d2d2; }
+    .testimonial-grid .review:nth-child(2) {
+      border-bottom: 1px dashed #d2d2d2;
+      border-left: 1px dashed #d2d2d2; }
+    .testimonial-grid .review:last-child {
+      border-left: 1px dashed #d2d2d2; }
+    .testimonial-grid .review li:nth-child(2) {
+      font-weight: bold;
+      padding-top: 1rem; }
+    .testimonial-grid .review img {
+      height: 100px;
+      width: 100px; }
+    .testimonial-grid .review .review-info {
+      list-style: none;
+      padding: 0;
+      padding-left: 1rem; }

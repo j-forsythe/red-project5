@@ -30,3 +30,38 @@
     flex: 1 0 25%;
   }
 }
+
+.testimonial-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      // align-items: center;
+  .review {
+    display: flex;
+    flex: 1 0 50%;
+    padding: 1rem;
+    &:first-child {
+      border-bottom: $border__dashed;
+    }
+    &:nth-child(2) {
+      border-bottom: $border__dashed;
+      border-left: $border__dashed;
+    }
+    &:last-child {
+      border-left: $border__dashed;
+    }
+    li:nth-child(2) {
+      font-weight: bold;
+      padding-top: 1rem;
+    }
+    img {
+      height: 100px;
+      width: 100px;
+    }
+    .review-info {
+      list-style: none;
+      padding: 0;
+      padding-left: 1rem;
+      }
+  }
+}
