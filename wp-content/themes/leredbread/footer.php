@@ -13,15 +13,7 @@
 				<div class="site-info  container">
 					<!-- <a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a> -->
 					<div class="contact-info">
-						<h3>Contact</h3>
-						<p>
-							<i class="fa fa-envelope"></i>
-							<a href="#">info@leredbread.com</a>
-						</p>
-						<p>
-							<i class="fa fa-phone"></i>
-							<a href="#">(555) 343 456 7891</a>
-						</p>
+						<?php dynamic_sidebar('sidebar-2'); ?>
 						<p>
 							<i class="fa fa-facebook-square"></i>
 							<i class="fa fa-twitter-square"></i>
@@ -32,19 +24,7 @@
 						<img src="<?php echo get_template_directory_uri() .'./assets/images/lrb-logo-white.svg' ?> " alt="Le Red Bread" />
 					</div><!-- .footer-logo -->
 					<div class="business-hours">
-						<h3>Business Hours</h3>
-						<p>
-							<span>Monday-Friday:</span>
-							9am to 5pm
-						</p>
-						<p>
-							<span>Saturday:</span>
-							10am to 2pm
-						</p>
-						<p>
-							<span>Sunday:</span>
-							Closed
-						</p>
+					<?php dynamic_sidebar('sidebar-3'); ?>
 					</div><!-- .business-hours -->
 				</div><!-- .site-info -->
 				<div class="copy">

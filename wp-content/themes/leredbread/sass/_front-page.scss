@@ -2,16 +2,18 @@
 # Front-Page
 --------------------------------------------------------------*/
 
-.home {
-  border: none;
+.front-page {
+  h2, h3 {
+    text-transform: uppercase;
+  }
   .hero-banner {
-   background:  url('../../assets/images/hero-bread.jpg') center top no-repeat;
-   background-size: cover;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 550px;
-   width: 100vw;
+    background:  url('../../assets/images/hero-bread.jpg') center top no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    width: 100%;
     h1 {
       font-family: Overlock;
       color: $color__background-body;
@@ -23,45 +25,120 @@
   }
 }
 
-.product-grid {
+.product-cat {
   display: flex;
   flex-wrap: wrap;
-  .archive-product {
+  padding-top: 2rem;
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
     flex: 1 0 25%;
+    justify-content: center;
+    padding: 1rem;
+    img {
+      width: 80%;
+      height: 80%;
+    }
   }
 }
 
-.testimonial-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      // align-items: center;
-  .review {
+.see-products {
+  text-align: center;
+  padding: 1rem;
+  background: $color__background-screen;
+  border: $border__solid;
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  p {
+    margin: 1rem;
+  }
+  .see-product-button {
+    color: $color__background-body;
+    background: $brand_color_brown;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    &:hover {
+      filter: brightness(2);
+    }
+  }
+}
+
+.news-posts {
+  background: $color__background-screen;
+  border: $border__solid 0;
+  padding: 2rem 0 4rem 0;
+  text-align: center;
+  .latest-news {
     display: flex;
-    flex: 1 0 50%;
-    padding: 1rem;
-    &:first-child {
-      border-bottom: $border__dashed;
-    }
-    &:nth-child(2) {
-      border-bottom: $border__dashed;
-      border-left: $border__dashed;
-    }
-    &:last-child {
-      border-left: $border__dashed;
-    }
-    li:nth-child(2) {
-      font-weight: bold;
-      padding-top: 1rem;
-    }
-    img {
-      height: 100px;
-      width: 100px;
-    }
-    .review-info {
-      list-style: none;
-      padding: 0;
-      padding-left: 1rem;
+    background: $color__background-body;
+    .latest-posts {
+      display: flex;
+      flex: 1 0 25%;
+      flex-wrap: wrap;
+      border: $border__solid;
+      padding: .25rem;
+      h4 {
+        font-family: Open Sans;
+        text-align: left;
+        width: 225px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        a {
+          color: $brand_color_mgrey;
+          &:hover {
+            color: $brand_color_red;
+            text-decoration: underline;
+          }
+        }
       }
+      img {
+        height: 200px;
+        max-width: auto;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.testimonial {
+  text-align: center;
+  .testimonial-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    padding-bottom: 2rem;
+    .review {
+      display: flex;
+      flex: 1 0 50%;
+      padding: 1rem;
+      &:first-child {
+        border-bottom: $border__dashed;
+      }
+      &:nth-child(2) {
+        border-bottom: $border__dashed;
+        border-left: $border__dashed;
+      }
+      &:last-child {
+        border-left: $border__dashed;
+      }
+      li:nth-child(2) {
+        font-weight: bold;
+        padding-top: 1rem;
+      }
+      img {
+        height: 100px;
+        width: 100px;
+      }
+      .review-info {
+        list-style: none;
+        padding: 0;
+        padding-left: 1rem;
+      }
+    }
   }
 }

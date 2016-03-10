@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+# About Page
+--------------------------------------------------------------*/
+
+.title  {
+  margin-bottom: 2rem;
+  text-align: center;
+  h2 {
+    margin-bottom: .25rem;
+    text-transform: uppercase;
+  }
+  span {
+    font-size: .9rem;
+  }
+}
+
+.about-info {
+  display: flex;
+  justify-content: space-between;
+  h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-transform: none;
+    color: $brand_color_brown;
+  }
+  span {
+    color: $brand_color_mgrey;
+  }
+  .team {
+    flex: 1 0 45%;
+  }
+  .culture {
+    flex: 1 0 45%;
+  }
+}
+
+.story {
+  padding-bottom: 2rem;
+  h3 {
+    text-align: center;
+    font-size: 1.75rem;
+  }
+}

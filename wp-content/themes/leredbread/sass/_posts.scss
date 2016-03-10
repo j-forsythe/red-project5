@@ -17,3 +17,52 @@
 .entry-meta {
   color: $brand_color_mgrey;
 }
+
+.product-type {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  width: 75%;
+  justify-content: center;
+  .categories {
+    flex: 1 0 25%;
+    padding: 1rem;
+    a {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      img {
+        width: 80%;
+        height: 80%;
+      }
+      h3 {
+        text-transform: uppercase;
+        color: $brand_color_brown;
+        text-align: center;
+      }
+    }
+
+  }
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  .archive-product {
+    flex: 1 0 25%;
+    border: $border__solid;
+    .product-info, span {
+      font-family: Open Sans;
+    }
+    .entry-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+    }
+    .price {
+      float:right;
+    // white-space:nowrap;
+    }
+  }
+}

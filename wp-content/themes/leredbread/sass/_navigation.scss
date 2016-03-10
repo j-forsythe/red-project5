@@ -15,6 +15,7 @@ a {
 	&:focus,
 	&:active {
 		color: $color__link-hover;
+		text-decoration: underline;
 	}
 	&:focus {
 		outline: thin dotted;
