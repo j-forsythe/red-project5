@@ -18,12 +18,16 @@
   color: $brand_color_mgrey;
 }
 
+.products-page h2{
+  padding-top: 3rem;
+}
 .product-type {
   display: flex;
   flex-wrap: wrap;
   padding-top: 2rem;
   width: 75%;
   justify-content: center;
+  margin: 0 auto;
   .categories {
     flex: 1 0 25%;
     padding: 1rem;
@@ -42,7 +46,6 @@
         text-align: center;
       }
     }
-
   }
 }
 
@@ -54,15 +57,19 @@
     border: $border__solid;
     .product-info, span {
       font-family: Open Sans;
+      // margin: .25rem;
+      display: flex;
+      justify-content: space-between;
     }
-    .entry-title {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+    .entry-title:after {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis clip;
+      // content: "......................";
     }
     .price {
-      float:right;
-    // white-space:nowrap;
+      flex: 1 0 auto;
+      // white-space:nowrap;
     }
   }
 }

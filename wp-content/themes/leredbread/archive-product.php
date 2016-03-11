@@ -8,7 +8,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main container" role="main">
+		<div class="products-page container">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -18,6 +18,7 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 				<span>We are a team of creative and talented individuals who love making delicious treats.</span>
+				<hr></hr>
 			</header><!-- .page-header -->
 
 			<section class="product-type">
@@ -56,7 +57,7 @@ get_header(); ?>
 		<?php endif; ?>
 	</section><!-- product-grid -->
 
-		</main><!-- #main -->
+</div><!-- #main -->
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

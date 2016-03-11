@@ -14,7 +14,7 @@
 					<!-- <a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a> -->
 					<div class="contact-info">
 						<?php dynamic_sidebar('sidebar-2'); ?>
-						<p>
+						<p class="footer-social">
 							<i class="fa fa-facebook-square"></i>
 							<i class="fa fa-twitter-square"></i>
 							<i class="fa fa-google-plus-square"></i>

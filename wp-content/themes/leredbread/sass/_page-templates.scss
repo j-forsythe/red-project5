@@ -2,4 +2,54 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+/* Contact page */
+.type-page {
+  h2 {
+    color: $brand_color_mgrey;
+  }
+}
+
+/*contact form*/
+.wpcf7 {
+  width: 750px;
+.wpcf7-form {
+  font-weight: bold;
+  color: $brand_color_mgrey;
+  span {
+    color: $brand_color_red;
+  }
+  input, textarea{
+    background: $color__background-screen;
+  }
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    .contact-name {
+      margin-right: 1rem;
+    }
+    .contact-name input, .contact-email input{
+      width: 100%;
+    }
+  }
+  .subject input {
+    width: 100%;
+      }
+      .wpcf7-submit {
+        color: $color__background-body;
+        background: $brand_color_brown;
+        padding: .75rem 1.5rem;
+        font-weight: normal;
+        box-shadow: none;
+        font-size: 1rem;
+        border-radius: 5px;
+                &:hover {
+          box-shadow: none;
+          filter: brightness(2);
+        }
+      }
+    }
+}
+
+.wpcf7-not-valid-tip {
+  font-weight: normal;
+}

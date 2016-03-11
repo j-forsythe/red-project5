@@ -36,7 +36,7 @@ get_header(); ?>
 					<p>
 						All our products are made fresh daily from locally-sourced ingredients. Our menu is updated frequently.
 					</p>
-						<a href="<?php 	?>" class="see-product-button">
+						<a href="<?php echo esc_url( home_url( '/products' ) ); ?>" class="see-product-button">
 							See Our Products
 						</a>
 				</div><!--see-products -->
@@ -44,6 +44,7 @@ get_header(); ?>
 
 			<section class="news-posts">
 				<h2>Our Latest News</h2>
+				<hr></hr>
 				<div class="latest-news container">
 					<?php
 					$args = array( 'post_type' => 'post', 'posts_per_page' =>4 );
@@ -65,6 +66,7 @@ get_header(); ?>
 
 			<section class="testimonial container">
 				<h2>What Others Say About us</h2>
+				<hr></hr>
 				<?php
 				$args = array( 'post_type' => 'testimonial');
 				$all_testimonial = get_posts( $args );

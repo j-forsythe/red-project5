@@ -5,11 +5,13 @@
 get_header();?>
 
 
-<div class="about-page container">
+<div class="content-area about-page container">
 	<div class="title">
 		<h2>Learn About Our Team and Culture</h2>
 		<span><?php echo CFS()->get('tagline'); ?></span>
+		<hr></hr>
 	</div><!-- about-title-->
+	<section class="about-col">
 	<div class="about-info">
 		<div class="team">
 			<img src="<?php echo get_template_directory_uri() .'./assets/images/team.jpg' ?>" alt="" />
@@ -24,6 +26,8 @@ get_header();?>
 			<?php echo CFS()->get('bakery_copy'); ?>
 		</div><!--culture-->
 	</div><!--about-info-->
+</section>
+
 	<div class="story">
 		<h3>Our Story</h3>
 		<?php echo CFS()->get('our_story'); ?>
@@ -32,7 +36,7 @@ get_header();?>
 		<p>
 Feel free to contact us with any questions coments or suggestions. We even take custom orders!
 		</p>
-		<a href="<?php 	?>" class="see-product-button">
+		<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="see-product-button">
 			Contact Us
 		</a>
 	</div><!--see-products -->

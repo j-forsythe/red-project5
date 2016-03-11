@@ -363,7 +363,20 @@ hr {
   background-color: #ccc;
   border: 0;
   height: 1px;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  position: relative;
+  width: 341px;
+  padding: 0;
+  margin: 3rem auto 3rem; }
+  hr:after {
+    position: absolute;
+    color: #ccc;
+    font-family: FontAwesome;
+    content: '\f111';
+    line-height: 0;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    left: 50%; }
 
 ul, ol {
   margin: 0 0 1.5em 3em; }
@@ -669,8 +682,10 @@ a {
   -webkit-flex: 1 0 75%;
       -ms-flex: 1 0 75%;
           flex: 1 0 75%;
-  border-right: 1px solid #e1e1e1;
-  padding: 3rem 3rem 3rem 0; }
+  padding: 3rem 0 5rem 0; }
+
+.content-area {
+  padding-bottom: 5rem; }
 
 /*--------------------------------------------------------------
 # Media
@@ -735,7 +750,49 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
+/* Contact page */
+.type-page h2 {
+  color: #808080; }
+
+/*contact form*/
+.wpcf7 {
+  width: 750px; }
+  .wpcf7 .wpcf7-form {
+    font-weight: bold;
+    color: #808080; }
+    .wpcf7 .wpcf7-form span {
+      color: #db272a; }
+    .wpcf7 .wpcf7-form input, .wpcf7 .wpcf7-form textarea {
+      background: #fafafa; }
+    .wpcf7 .wpcf7-form .contact-info {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .wpcf7 .wpcf7-form .contact-info .contact-name {
+        margin-right: 1rem; }
+      .wpcf7 .wpcf7-form .contact-info .contact-name input, .wpcf7 .wpcf7-form .contact-info .contact-email input {
+        width: 100%; }
+    .wpcf7 .wpcf7-form .subject input {
+      width: 100%; }
+    .wpcf7 .wpcf7-form .wpcf7-submit {
+      color: #ffffff;
+      background: #400c0d;
+      padding: .75rem 1.5rem;
+      font-weight: normal;
+      box-shadow: none;
+      font-size: 1rem;
+      border-radius: 5px; }
+      .wpcf7 .wpcf7-form .wpcf7-submit:hover {
+        box-shadow: none;
+        -webkit-filter: brightness(2);
+                filter: brightness(2); }
+
+.wpcf7-not-valid-tip {
+  font-weight: normal; }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -785,16 +842,20 @@ object {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-  .main-navigation .menu li {
+  .main-navigation .menu .menu-item {
     padding: 0.5rem 1.5rem;
     border-right: 1px solid #e1e1e1;
     height: 100%; }
-    .main-navigation .menu li:first-child {
+    .main-navigation .menu .menu-item a {
+      font-weight: bold;
+      color: #808080; }
+      .main-navigation .menu .menu-item a:hover {
+        color: #400c0d; }
+    .main-navigation .menu .menu-item:first-child {
       border-left: 1px solid #e1e1e1; }
-  .main-navigation .menu a {
-    font-weight: bold;
-    color: #808080; }
-    .main-navigation .menu a:hover {
+  .main-navigation .menu .current-menu-item {
+    box-shadow: inset 0 -3px #db272a; }
+    .main-navigation .menu .current-menu-item a {
       color: #400c0d; }
 
 .search-form {
@@ -819,8 +880,7 @@ object {
 .site-footer {
   background: #222222;
   color: #ffffff;
-  line-height: 1rem;
-  margin-top: 5rem; }
+  line-height: 1rem; }
   .site-footer .site-info {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -840,6 +900,11 @@ object {
       margin-bottom: 0.75rem; }
     .site-footer .site-info p {
       margin-bottom: 0.5rem; }
+
+.contact-info .footer-social {
+  font-size: 1.25rem;
+  letter-spacing: .25rem;
+  line-height: 0; }
 
 .contact-info a {
   color: white;
@@ -870,7 +935,8 @@ object {
       -ms-flex: 1 0 25%;
           flex: 1 0 25%;
   padding-left: 2rem;
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  border-left: 1px solid #e1e1e1; }
 
 /*--------------------------------------------------------------
 # Posts
@@ -887,6 +953,9 @@ object {
 .entry-meta {
   color: #808080; }
 
+.products-page h2 {
+  padding-top: 3rem; }
+
 .product-type {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -898,7 +967,8 @@ object {
   width: 75%;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin: 0 auto; }
   .product-type .categories {
     -webkit-flex: 1 0 25%;
         -ms-flex: 1 0 25%;
@@ -935,13 +1005,21 @@ object {
             flex: 1 0 25%;
     border: 1px solid #e1e1e1; }
     .product-grid .archive-product .product-info, .product-grid .archive-product span {
-      font-family: Open Sans; }
-    .product-grid .archive-product .entry-title {
+      font-family: Open Sans;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .product-grid .archive-product .entry-title:after {
       overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap; }
+      white-space: nowrap;
+      text-overflow: ellipsis clip; }
     .product-grid .archive-product .price {
-      float: right; }
+      -webkit-flex: 1 0 auto;
+          -ms-flex: 1 0 auto;
+              flex: 1 0 auto; }
 
 /*--------------------------------------------------------------
 # Front-Page
@@ -969,7 +1047,7 @@ object {
     font-size: 5rem;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 2px 3px 2px #333333; }
+    text-shadow: 2px 2px 2px rgba(100, 100, 100, 0.8); }
 
 .product-cat {
   display: -webkit-flex;
@@ -1115,28 +1193,26 @@ object {
   .title span {
     font-size: .9rem; }
 
-.about-info {
+.about-col {
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .about-info h4 {
-    margin: 0;
-    font-size: 1.5rem;
-    text-transform: none;
-    color: #400c0d; }
-  .about-info span {
-    color: #808080; }
-  .about-info .team {
-    -webkit-flex: 1 0 45%;
-        -ms-flex: 1 0 45%;
-            flex: 1 0 45%; }
-  .about-info .culture {
-    -webkit-flex: 1 0 45%;
-        -ms-flex: 1 0 45%;
-            flex: 1 0 45%; }
+  display: flex; }
+  .about-col .about-info {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .about-col .about-info h4 {
+      margin: 0;
+      font-size: 1.5rem;
+      text-transform: none;
+      color: #400c0d; }
+    .about-col .about-info span {
+      color: #808080; }
+    .about-col .about-info .team, .about-col .about-info .culture {
+      width: 47.25%; }
 
 .story {
   padding-bottom: 2rem; }
