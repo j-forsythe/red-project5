@@ -16,24 +16,24 @@
 
 .about-col {
   display: flex;
-.about-info {
-  display: flex;
-  justify-content: space-between;
-  // margin: 0 auto;
-  // width: 100%;
-  h4 {
-    margin: 0;
-    font-size: 1.5rem;
-    text-transform: none;
-    color: $brand_color_brown;
+
+  .about-info {
+    display: flex;
+    justify-content: space-between;
+
+    h4 {
+      margin: 0;
+      font-size: 1.5rem;
+      text-transform: none;
+      color: $brand_color_brown;
+    }
+    span {
+      color: $brand_color_mgrey;
+    }
+    .team, .culture {
+      width: 47.25%;
+    }
   }
-  span {
-    color: $brand_color_mgrey;
-  }
-  .team, .culture {
-    width: 47.25%;
-  }
-}
 }
 
 .story {
@@ -42,4 +42,8 @@
     text-align: center;
     font-size: 1.75rem;
   }
+}
+
+.see-products {
+
 }

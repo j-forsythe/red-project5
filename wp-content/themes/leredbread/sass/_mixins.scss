@@ -10,3 +10,19 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+// Buttons
+
+@mixin button {
+	color: $color__background-body;
+	background: $brand_color_brown;
+	padding: 0.75rem 1.5rem;
+	border-radius: 5px;
+	box-shadow: none;
+	border: 0;
+	font-size: 1em;
+	
+	&:hover {
+		filter: brightness(2);
+	}
+}

@@ -2,6 +2,19 @@
 # Posts
 --------------------------------------------------------------*/
 
+.single article, .blog article {
+  padding-right: 3em;
+
+    h2.entry-title {
+      font-size: 1.7em;
+      text-transform: none;
+      margin: 0.5em 0 0;
+    }
+    .entry-content a {
+      font-weight: 700;
+    }
+}
+
 .entry-title {
   font-family: Overlock;
   margin: 0;
@@ -18,58 +31,39 @@
   color: $brand_color_mgrey;
 }
 
-.products-page h2{
-  padding-top: 3rem;
+/*single posts */
+.hentry .entry-title {
+  text-transform: uppercase;
 }
-.product-type {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 2rem;
-  width: 75%;
-  justify-content: center;
-  margin: 0 auto;
-  .categories {
-    flex: 1 0 25%;
-    padding: 1rem;
-    a {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
 
-      img {
-        width: 80%;
-        height: 80%;
-      }
-      h3 {
-        text-transform: uppercase;
-        color: $brand_color_brown;
-        text-align: center;
-      }
-    }
+.entry-footer {
+  span {
+    margin-right: 1rem;
   }
 }
 
-.product-grid {
-  display: flex;
-  flex-wrap: wrap;
-  .archive-product {
-    flex: 1 0 25%;
-    border: $border__solid;
-    .product-info, span {
-      font-family: Open Sans;
-      // margin: .25rem;
-      display: flex;
-      justify-content: space-between;
-    }
-    .entry-title:after {
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis clip;
-      // content: "......................";
-    }
-    .price {
-      flex: 1 0 auto;
-      // white-space:nowrap;
-    }
+.comments-area {
+  .comment-reply-title {
+    color: $brand_color_brown;
+    font-size: 1.5rem;
   }
+  .comment-form {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+  .comment-form-author, .comment-form-email {
+    flex: 0 1 50%;
+    flex-direction: row;
+  }
+  label {
+    color: $brand_color_mgrey;
+    font-weight: bold;
+  }
+  input, textarea {
+    background: $color__background-screen;
+  }
+}
+.form-submit input[type=submit] {
+  @include button;
 }

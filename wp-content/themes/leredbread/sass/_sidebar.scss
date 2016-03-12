@@ -7,5 +7,16 @@
   padding-left: 2rem;
   padding-top: 3rem;
   border-left: $border__solid;
+}
 
+#secondary {
+
+  p {
+    margin: 0.3em 0;
+  }
+  .icons {
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+  }
 }

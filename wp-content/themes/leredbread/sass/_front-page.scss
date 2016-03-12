@@ -55,14 +55,8 @@
   p {
     margin: 1rem;
   }
-  .see-product-button {
-    color: $color__background-body;
-    background: $brand_color_brown;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    &:hover {
-      filter: brightness(2);
-    }
+  a {
+    @include button;
   }
 }
 
