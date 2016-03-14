@@ -44,6 +44,9 @@
       box-shadow: none;
       font-size: 1rem;
       color: $brand_color_mgrey;
+      &:hover {
+        filter: brightness(1);
+      }
     }
     fieldset {
       border: none;
@@ -53,6 +56,9 @@
         background: transparent;
         font-family: Open Sans;
         font-weight: normal;
+        &:focus {
+          outline: none;
+        }
       }
     }
   }

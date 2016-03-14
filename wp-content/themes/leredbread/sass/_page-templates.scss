@@ -99,7 +99,7 @@
     input, textarea{
       background: $color__background-screen;
     }
-    
+
     .contact-info {
       display: flex;
       justify-content: space-between;
@@ -148,11 +148,12 @@
   }
   article {
     padding-bottom: 1rem;
+    text-align: left;
   }
 }
 
 /* 404 page */
-.error-404 {
+.error-404, .not-found {
   color: $brand_color_mgrey;
   button.search-submit {
     @include button;
@@ -186,7 +187,6 @@
         flex: 1 0 100%;
         padding: 1.5rem 0;
         border-bottom: $border__dashed;
-        // align-items: center;
       }
       img {
         height: 100px;

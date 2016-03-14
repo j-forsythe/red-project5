@@ -946,12 +946,13 @@ object {
   font-weight: bold; }
 
 .search-page article {
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  text-align: left; }
 
 /* 404 page */
-.error-404 {
+.error-404, .not-found {
   color: #808080; }
-  .error-404 button.search-submit {
+  .error-404 button.search-submit, .not-found button.search-submit {
     color: #ffffff;
     background: #400c0d;
     padding: 0.75rem 1.5rem;
@@ -960,15 +961,15 @@ object {
     border: 0;
     font-size: 1em;
     text-shadow: none; }
-    .error-404 button.search-submit:hover {
+    .error-404 button.search-submit:hover, .not-found button.search-submit:hover {
       -webkit-filter: brightness(2);
               filter: brightness(2); }
-  .error-404 .search-form {
+  .error-404 .search-form, .not-found .search-form {
     color: #808080; }
-    .error-404 .search-form fieldset {
+    .error-404 .search-form fieldset, .not-found .search-form fieldset {
       border: none;
       padding: 0; }
-    .error-404 .search-form input {
+    .error-404 .search-form input, .not-found .search-form input {
       padding: .5rem; }
 
 /*Testimonial Page*/
@@ -1067,6 +1068,9 @@ object {
       box-shadow: none;
       font-size: 1rem;
       color: #808080; }
+      .main-navigation .navigation button:hover {
+        -webkit-filter: brightness(1);
+                filter: brightness(1); }
     .main-navigation .navigation fieldset {
       border: none;
       padding: 0; }
@@ -1075,6 +1079,8 @@ object {
         background: transparent;
         font-family: Open Sans;
         font-weight: normal; }
+        .main-navigation .navigation fieldset input:focus {
+          outline: none; }
   .main-navigation .menu .menu-item {
     padding: 0.75rem 1.5rem;
     border-right: 1px solid #e1e1e1;
