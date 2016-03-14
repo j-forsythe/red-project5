@@ -20,7 +20,6 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-
       img {
         width: 80%;
         height: 80%;
@@ -51,11 +50,9 @@
       overflow: hidden;
       white-space: nowrap;
       text-overflow: clip clip;
-      // width: 25%;
       content: "....................";
     }
     .price, .entry-title {
-      flex: 1 0 auto;
       white-space:nowrap;
     }
   }
@@ -102,6 +99,7 @@
     input, textarea{
       background: $color__background-screen;
     }
+    
     .contact-info {
       display: flex;
       justify-content: space-between;
@@ -112,9 +110,11 @@
         width: 100%;
       }
     }
+
     .subject input {
       width: 100%;
     }
+
     .wpcf7-submit {
       color: $color__background-body;
       background: $brand_color_brown;

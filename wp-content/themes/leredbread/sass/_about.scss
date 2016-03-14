@@ -16,11 +16,9 @@
 
 .about-col {
   display: flex;
-
   .about-info {
     display: flex;
     justify-content: space-between;
-
     h4 {
       margin: 0;
       font-size: 1.5rem;
@@ -42,8 +40,4 @@
     text-align: center;
     font-size: 1.75rem;
   }
-}
-
-.see-products {
-
 }

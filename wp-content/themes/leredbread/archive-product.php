@@ -51,11 +51,11 @@ get_header(); ?>
 						</div><!--product-info-->
 					</div><!-- archive-product -->
 				<?php endwhile; ?>
-				<?php else : ?>
-					<?php get_template_part( 'template-parts/content', 'none' ); ?>
-					<?php wp_reset_postdata(); ?>
-				<?php endif; ?>
-			</section><!-- product-grid -->
+			<?php else : ?>
+				<?php get_template_part( 'template-parts/content', 'none' ); ?>
+				<?php wp_reset_postdata(); ?>
+			<?php endif; ?>
+		</section><!-- product-grid -->
 
 	</div><!-- #main -->
 </div><!-- #primary -->

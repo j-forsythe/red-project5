@@ -443,8 +443,7 @@ input[type="submit"] {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: .6em 1em .4em; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -869,9 +868,6 @@ object {
       text-overflow: clip clip;
       content: "...................."; }
     .product-grid .archive-product .price, .product-grid .archive-product .entry-title {
-      -webkit-flex: 1 0 auto;
-          -ms-flex: 1 0 auto;
-              flex: 1 0 auto;
       white-space: nowrap; }
 
 /*Product Categories */
@@ -1034,7 +1030,7 @@ object {
               justify-content: space-between;
       padding: 1rem 0; }
     .site-header .site-branding img {
-      width: 250px; }
+      width: 300px; }
     .site-header .site-branding .header-social {
       list-style: none;
       display: -webkit-flex;
@@ -1306,7 +1302,6 @@ input, textarea {
     -webkit-filter: brightness(2);
             filter: brightness(2); }
 
-/* Single Post */
 /*--------------------------------------------------------------
 # Front-Page
 --------------------------------------------------------------*/
@@ -1428,7 +1423,6 @@ input, textarea {
             text-decoration: underline; }
       .news-posts .latest-news .latest-posts img {
         height: 200px;
-        max-width: auto;
         overflow: hidden; }
 
 .testimonial {

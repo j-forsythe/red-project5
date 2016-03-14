@@ -1,19 +1,19 @@
 <?php
 /**
- * The template for displaying archive pages.
- *
- * @package RED_Starter_Theme
- */
+* The template for displaying archive pages.
+*
+* @package RED_Starter_Theme
+*/
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 			<header class="testimonial-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+				the_archive_title( '<h1 class="page-title">', '</h1>' );
 				?>
 			</header><!-- .page-header -->
 
@@ -34,11 +34,11 @@ get_header(); ?>
 								</ul>
 							</div><!--review -->
 						<?php endforeach; wp_reset_postdata(); ?>
-			</div>
-		<?php endif; ?>
+					</div>
+				<?php endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+			</main><!-- #main -->
+		</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+		<?php get_sidebar(); ?>
+		<?php get_footer(); ?>

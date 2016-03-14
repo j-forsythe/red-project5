@@ -36,9 +36,9 @@ get_header(); ?>
 					<p>
 						All our products are made fresh daily from locally-sourced ingredients. Our menu is updated frequently.
 					</p>
-						<a href="<?php echo esc_url( home_url( '/products' ) ); ?>" class="see-product-button">
-							See Our Products
-						</a>
+					<a href="<?php echo esc_url( home_url( '/products' ) ); ?>" class="see-product-button">
+						See Our Products
+					</a>
 				</div><!--see-products -->
 			</section><!--product-cat -->
 
@@ -66,16 +66,15 @@ get_header(); ?>
 
 			<section class="testimonial container">
 				<a href="<?php echo esc_url( home_url( '/testimonial' ) ); ?>" alt="testimonials" class="test-title">
-
-				<h2>What Others Say About us</h2>
-			</a>
+					<h2>What Others Say About us</h2>
+				</a>
 				<hr></hr>
-					<?php
-						get_template_part( 'template-parts/home-testimonial' );
-					?>
-				</section><!--testimonial -->
-			</article><!-- frontpage -->
-		</main><!-- #main -->
-	</div><!-- #primary -->
+				<?php
+				get_template_part( 'template-parts/home-testimonial' );
+				?>
+			</section><!--testimonial -->
+		</article><!-- frontpage -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
-	<?php get_footer(); ?>
+<?php get_footer(); ?>
