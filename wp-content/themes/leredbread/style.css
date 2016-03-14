@@ -975,6 +975,47 @@ object {
     .error-404 .search-form input {
       padding: .5rem; }
 
+/*Testimonial Page*/
+.testimonial-header {
+  border-bottom: 1px dashed #d2d2d2; }
+
+.archive-testimonial {
+  text-align: center; }
+  .archive-testimonial .testimonial-grid {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
+    padding-bottom: 2rem; }
+    .archive-testimonial .testimonial-grid .review {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex: 1 0 100%;
+          -ms-flex: 1 0 100%;
+              flex: 1 0 100%;
+      padding: 1.5rem 0;
+      border-bottom: 1px dashed #d2d2d2; }
+    .archive-testimonial .testimonial-grid img {
+      height: 100px;
+      width: 100px; }
+    .archive-testimonial .testimonial-grid .review-info {
+      list-style: none;
+      padding: 0;
+      padding-left: 1rem; }
+      .archive-testimonial .testimonial-grid .review-info .review-name h3 {
+        font-size: 1.75rem;
+        color: #808080;
+        margin: 0; }
+      .archive-testimonial .testimonial-grid .review-info .job-title {
+        margin: 1rem 0; }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -1392,6 +1433,8 @@ input, textarea {
 
 .testimonial {
   text-align: center; }
+  .testimonial .test-title h2 {
+    color: #222222; }
   .testimonial .testimonial-grid {
     display: -webkit-flex;
     display: -ms-flexbox;

@@ -65,16 +65,16 @@
 .product-category {
   border-bottom: $border__dashed;
 }
-  .cat-type {
-    display: flex;
-    padding: 1rem 0;
-    border-bottom: $border__dashed;
-      img {
-        width: 150px;
-        height: 150px;
-        padding-right: 2rem;
-    }
+.cat-type {
+  display: flex;
+  padding: 1rem 0;
+  border-bottom: $border__dashed;
+  img {
+    width: 150px;
+    height: 150px;
+    padding-right: 2rem;
   }
+}
 
 /*Single Product */
 .single-header h1 {
@@ -168,3 +168,42 @@
     }
   }
 }
+
+/*Testimonial Page*/
+.testimonial-header {
+  border-bottom: $border__dashed;
+}
+  .archive-testimonial {
+    text-align: center;
+    .testimonial-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: left;
+      padding-bottom: 2rem;
+      .review {
+        display: flex;
+        flex: 1 0 100%;
+        padding: 1.5rem 0;
+        border-bottom: $border__dashed;
+        // align-items: center;
+      }
+      img {
+        height: 100px;
+        width: 100px;
+      }
+      .review-info {
+        list-style: none;
+        padding: 0;
+        padding-left: 1rem;
+        .review-name h3 {
+          font-size: 1.75rem;
+          color: $brand_color_mgrey;
+          margin: 0;
+        }
+        .job-title {
+          margin: 1rem 0;
+        }
+      }
+    }
+  }

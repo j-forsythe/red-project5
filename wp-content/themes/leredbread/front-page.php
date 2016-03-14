@@ -65,25 +65,14 @@ get_header(); ?>
 			</section><!--news-posts -->
 
 			<section class="testimonial container">
+				<a href="<?php echo esc_url( home_url( '/testimonial' ) ); ?>" alt="testimonials" class="test-title">
+
 				<h2>What Others Say About us</h2>
+			</a>
 				<hr></hr>
-				<?php
-				$args = array( 'post_type' => 'testimonial');
-				$all_testimonial = get_posts( $args );
-				?>
-				<div class="testimonial-grid">
-					<?php foreach( $all_testimonial as $post ): setup_postdata( $post ); ?>
-						<div class="review">
-							<img src="<?php echo CFS()->get('profile_picture'); ?>" alt="" />
-							<ul class="review-info">
-								<li><?php echo CFS()->get('review') ?></li>
-								<li><?php echo CFS()->get('name') ?></li>
-								<li><?php echo CFS()->get('job_title') ?> -
-									<?php echo CFS()->get('company_link') ?></li>
-								</ul>
-							</div><!--review -->
-						<?php endforeach; wp_reset_postdata(); ?>
-					</div><!--testimonial-grid -->
+					<?php
+						get_template_part( 'template-parts/home-testimonial' );
+					?>
 				</section><!--testimonial -->
 			</article><!-- frontpage -->
 		</main><!-- #main -->

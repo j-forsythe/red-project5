@@ -58,15 +58,13 @@ function lrb_modify_archive_loop( $query ) {
 		$query->set( 'order', 'ASC' );
 		$query->set( 'posts_per_page', 12 );
 	}
-}
-add_action('pre_get_posts', 'lrb_modify_archive_loop');
-
-function lrb_modify_testimonial_loop( $query ) {
-	if (is_post_type_archive( array('testimonial')) && !is_admin() && $query->is_main_query() ) {
-		$query->set( 'order', 'DESC' );
+	elseif (is_post_type_archive( array('testimonial')) && !is_admin()) {
+		$query->set( 'orderby', 'title');
+		$query->set( 'order', 'ASC' );
+		// $query->set( 'posts_per_page', 12 );
 	}
 }
-add_action('pre_get_posts', 'lrb_modify_testimonial_loop');
+add_action('pre_get_posts', 'lrb_modify_archive_loop');
 
 /**
 *change archive titles based on post
@@ -78,6 +76,9 @@ function lrb_archive_title($title) {
 	elseif ( is_tax('product_type')) {
     $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
 		$title = $term->name;
+	}
+	elseif ( is_post_type_archive(array('testimonial'))) {
+		$title= 'Testimonials';
 	}
 	return $title;
 }
