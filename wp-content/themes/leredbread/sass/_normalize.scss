@@ -134,6 +134,7 @@ textarea {
 
 button {
 	overflow: visible;
+	@include button;
 }
 
 button,

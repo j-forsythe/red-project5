@@ -154,7 +154,18 @@ textarea {
   margin: 0; }
 
 button {
-  overflow: visible; }
+  overflow: visible;
+  color: #ffffff;
+  background: #400c0d;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  box-shadow: none;
+  border: 0;
+  font-size: 1em;
+  text-shadow: none; }
+  button:hover {
+    -webkit-filter: brightness(2);
+            filter: brightness(2); }
 
 button,
 select {
@@ -928,6 +939,42 @@ object {
 .wpcf7-not-valid-tip {
   font-weight: normal; }
 
+/* Search Page */
+.search-page .search-header {
+  border-bottom: 1px dashed #d2d2d2; }
+
+.search-page h2 {
+  text-transform: none; }
+
+.search-page a {
+  font-weight: bold; }
+
+.search-page article {
+  padding-bottom: 1rem; }
+
+/* 404 page */
+.error-404 {
+  color: #808080; }
+  .error-404 button.search-submit {
+    color: #ffffff;
+    background: #400c0d;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 0;
+    font-size: 1em;
+    text-shadow: none; }
+    .error-404 button.search-submit:hover {
+      -webkit-filter: brightness(2);
+              filter: brightness(2); }
+  .error-404 .search-form {
+    color: #808080; }
+    .error-404 .search-form fieldset {
+      border: none;
+      padding: 0; }
+    .error-404 .search-form input {
+      padding: .5rem; }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -977,8 +1024,22 @@ object {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .main-navigation .navigation button {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      font-size: 1rem;
+      color: #808080; }
+    .main-navigation .navigation fieldset {
+      border: none;
+      padding: 0; }
+      .main-navigation .navigation fieldset input {
+        border: none;
+        background: transparent;
+        font-family: Open Sans;
+        font-weight: normal; }
   .main-navigation .menu .menu-item {
-    padding: 0.5rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     border-right: 1px solid #e1e1e1;
     height: 100%; }
     .main-navigation .menu .menu-item a {
@@ -992,23 +1053,6 @@ object {
     box-shadow: inset 0 -3px #db272a; }
     .main-navigation .menu .current-menu-item a {
       color: #400c0d; }
-
-.search-form {
-  color: #808080; }
-  .search-form fieldset {
-    border: none;
-    padding: 0; }
-    .search-form fieldset .search-field {
-      border: none;
-      background: transparent;
-      font-family: Open Sans;
-      font-weight: normal; }
-    .search-form fieldset .search-submit {
-      background: transparent;
-      border: none;
-      box-shadow: none;
-      font-size: 1rem;
-      color: #808080; }
 
 /*--------------------------------------------------------------
 # Footer
@@ -1215,7 +1259,8 @@ input, textarea {
   border-radius: 5px;
   box-shadow: none;
   border: 0;
-  font-size: 1em; }
+  font-size: 1em;
+  text-shadow: none; }
   .form-submit input[type=submit]:hover {
     -webkit-filter: brightness(2);
             filter: brightness(2); }
@@ -1300,7 +1345,8 @@ input, textarea {
     border-radius: 5px;
     box-shadow: none;
     border: 0;
-    font-size: 1em; }
+    font-size: 1em;
+    text-shadow: none; }
     .see-products a:hover {
       -webkit-filter: brightness(2);
               filter: brightness(2); }

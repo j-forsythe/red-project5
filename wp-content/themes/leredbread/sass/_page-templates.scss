@@ -134,3 +134,37 @@
 .wpcf7-not-valid-tip {
   font-weight: normal;
 }
+
+/* Search Page */
+.search-page {
+  .search-header {
+    border-bottom: $border__dashed;
+  }
+  h2 {
+    text-transform: none;
+  }
+  a {
+    font-weight: bold;
+  }
+  article {
+    padding-bottom: 1rem;
+  }
+}
+
+/* 404 page */
+.error-404 {
+  color: $brand_color_mgrey;
+  button.search-submit {
+    @include button;
+  }
+  .search-form {
+    color: $brand_color_mgrey;
+    fieldset {
+      border: none;
+      padding: 0;
+    }
+    input {
+      padding: .5rem;
+    }
+  }
+}

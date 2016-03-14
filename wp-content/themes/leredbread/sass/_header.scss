@@ -38,10 +38,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    button {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      font-size: 1rem;
+      color: $brand_color_mgrey;
+    }
+    fieldset {
+      border: none;
+      padding: 0;
+      input {
+        border: none;
+        background: transparent;
+        font-family: Open Sans;
+        font-weight: normal;
+      }
+    }
   }
   .menu {
     .menu-item {
-      padding: 0.5rem 1.5rem;
+      padding: 0.75rem 1.5rem;
       border-right: $border__solid;
       height: 100%;
       a {
@@ -60,27 +77,6 @@
       a {
         color: $brand_color_brown;
       }
-    }
-  }
-}
-
-.search-form {
-  color: $brand_color_mgrey;
-  fieldset {
-    border: none;
-    padding: 0;
-    .search-field {
-      border: none;
-      background: transparent;
-      font-family: Open Sans;
-      font-weight: normal;
-    }
-    .search-submit {
-      background: transparent;
-      border: none;
-      box-shadow: none;
-      font-size: 1rem;
-      color: $brand_color_mgrey;
     }
   }
 }
