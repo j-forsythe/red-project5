@@ -19,6 +19,11 @@ body {
 
 blockquote, q {
 	quotes: "" "";
+	color: $brand_color_mgrey;
+	font-size: 1.25rem;
+	border-left: 10px solid $brand_color_red;
+	margin: 0;
+	padding-left: 1.5rem;
 
 	&:before,
 	&:after {
@@ -51,7 +56,9 @@ ul, ol {
 }
 
 ul {
-	list-style: disc;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 ol {

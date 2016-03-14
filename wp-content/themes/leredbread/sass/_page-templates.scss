@@ -39,6 +39,7 @@
   flex-wrap: wrap;
   .archive-product {
     flex: 1 0 25%;
+    width: 25%;
     border: $border__solid;
     .product-info, span {
       font-family: Open Sans;
@@ -46,18 +47,43 @@
       display: flex;
       justify-content: space-around;
     }
-        .entry-title:after {
+    .entry-title:after {
       overflow: hidden;
       white-space: nowrap;
-      text-overflow: clip;
+      text-overflow: clip clip;
       // width: 25%;
       content: "....................";
     }
     .price, .entry-title {
       flex: 1 0 auto;
-      // white-space:nowrap;
+      white-space:nowrap;
     }
   }
+}
+
+/*Product Categories */
+.product-category {
+  border-bottom: $border__dashed;
+}
+  .cat-type {
+    display: flex;
+    padding: 1rem 0;
+    border-bottom: $border__dashed;
+      img {
+        width: 150px;
+        height: 150px;
+        padding-right: 2rem;
+    }
+  }
+
+/*Single Product */
+.single-header h1 {
+  margin-bottom: 1rem;
+}
+.single-price {
+  font-weight: bold;
+  font-family: Overlock;
+  font-size: 1.5rem;
 }
 
 /* Contact page */
@@ -70,42 +96,39 @@
 /*contact form*/
 .wpcf7 {
   width: 750px;
-.wpcf7-form {
-  font-weight: bold;
-  color: $brand_color_mgrey;
-  span {
-    color: $brand_color_red;
-  }
-  input, textarea{
-    background: $color__background-screen;
-  }
-  .contact-info {
-    display: flex;
-    justify-content: space-between;
-    .contact-name {
-      margin-right: 1rem;
+  .wpcf7-form {
+    font-weight: bold;
+    color: $brand_color_mgrey;
+    input, textarea{
+      background: $color__background-screen;
     }
-    .contact-name input, .contact-email input{
+    .contact-info {
+      display: flex;
+      justify-content: space-between;
+      .contact-name {
+        margin-right: 1rem;
+      }
+      .contact-name input, .contact-email input{
+        width: 100%;
+      }
+    }
+    .subject input {
       width: 100%;
     }
-  }
-  .subject input {
-    width: 100%;
-      }
-      .wpcf7-submit {
-        color: $color__background-body;
-        background: $brand_color_brown;
-        padding: .75rem 1.5rem;
-        font-weight: normal;
+    .wpcf7-submit {
+      color: $color__background-body;
+      background: $brand_color_brown;
+      padding: .75rem 1.5rem;
+      font-weight: normal;
+      box-shadow: none;
+      font-size: 1rem;
+      border-radius: 5px;
+      &:hover {
         box-shadow: none;
-        font-size: 1rem;
-        border-radius: 5px;
-                &:hover {
-          box-shadow: none;
-          filter: brightness(2);
-        }
+        filter: brightness(2);
       }
     }
+  }
 }
 
 .wpcf7-not-valid-tip {

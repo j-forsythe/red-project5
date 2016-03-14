@@ -15,3 +15,40 @@
 .widget_search .search-submit {
 	display: none;
 }
+
+/* Sidebar */
+.widget-area {
+  flex: 1 0 25%;
+  padding-left: 2rem;
+  padding-top: 3rem;
+  border-left: $border__solid;
+	color: $brand_color_mgrey;
+
+	.widget-title {
+		font-size: 1.25rem;
+		text-transform: uppercase;
+		color: $color__text-main;
+	}
+
+	/* LRB Hours */
+	.lrb-hours-class {
+		p {
+			line-height: 1;
+			.day-of-week {
+				color: $brand_color_red;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+/* Contact Info */
+.fa-ul {
+	li {
+		margin-bottom: .5rem;
+	}
+}
+.fa-li {
+	width: 0;
+	line-height: 1;
+}

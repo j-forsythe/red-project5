@@ -32,6 +32,10 @@
 	margin: 0 0 $base__space-unit;
 }
 
+.page-title {
+	text-transform: uppercase;
+}
+
 /* Asides */
 
 .blog .format-aside .entry-title,
@@ -55,7 +59,7 @@
 	margin: 0 auto;
 }
 
-.blog, .single, .error404, .page:not(.home), .archive:not(.post-type-archive-product) {
+.blog, .single, .error404, .search, .page:not(.home), .archive:not(.post-type-archive-product) {
 	.site-content {
 		display: flex;
 		justify-content: space-between;
@@ -64,13 +68,17 @@
 	}
 }
 
-.blog, .single, .error404, .page:not(.home), .archive:not(.post-type-archive-product) {
+.blog, .single, .error404, .search, .page:not(.home), .archive:not(.post-type-archive-product) {
 	.content-area {
 		flex: 1 0 75%;
-		padding: 3rem 0 5rem 0;
+		padding: 3rem 5% 5rem 0;
 	}
 }
 
 .content-area {
 	padding-bottom: 5rem;
+}
+
+.required  {
+	color: $brand_color_red;
 }

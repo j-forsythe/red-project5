@@ -13,7 +13,11 @@
 				<div class="site-info  container">
 					<!-- <a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a> -->
 					<div class="contact-info">
+						<div class="contact-info-wrapper">
+
 						<?php dynamic_sidebar('sidebar-2'); ?>
+					</div>
+
 						<p class="footer-social">
 							<i class="fa fa-facebook-square"></i>
 							<i class="fa fa-twitter-square"></i>

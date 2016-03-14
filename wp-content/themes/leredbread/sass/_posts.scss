@@ -5,14 +5,14 @@
 .single article, .blog article {
   padding-right: 3em;
 
-    h2.entry-title {
-      font-size: 1.7em;
-      text-transform: none;
-      margin: 0.5em 0 0;
-    }
-    .entry-content a {
-      font-weight: 700;
-    }
+  h2.entry-title {
+    font-size: 1.7em;
+    text-transform: none;
+    margin: 0.5em 0 0;
+  }
+  .entry-content a {
+    font-weight: 700;
+  }
 }
 
 .entry-title {
@@ -43,6 +43,32 @@
 }
 
 .comments-area {
+  justify-content: space-between;
+
+  .comments-title {
+    color: $brand_color_mgrey;
+  }
+  ol {
+    padding: 0;
+    margin: 0;
+  }
+  .comment-body {
+    display: flex;
+    width: 90%;
+    border-bottom: $border__dashed;
+    .comment-author-avatar img{
+      border-radius: 50%;
+      margin-right: 1.5rem;
+    }
+    .fn {
+      font-weight: bold;
+      font-style: normal;
+    }
+    .comment-metadata {
+      color: $brand_color_lgrey;
+    }
+  }
+
   .comment-reply-title {
     color: $brand_color_brown;
     font-size: 1.5rem;
@@ -50,20 +76,70 @@
   .comment-form {
     width: 95%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .comment-form-comment, .form-submit {
+      flex: 1 0 100%;
+    }
   }
-  .comment-form-author, .comment-form-email {
-    flex: 0 1 50%;
-    flex-direction: row;
+
+  .comment_form_url {
+    flex: 1 0 100%;
   }
-  label {
-    color: $brand_color_mgrey;
-    font-weight: bold;
+
+  .comment-form-email {
+    display: flex;
+    flex: 1 0 40%;
+    flex-wrap: wrap;
+    margin-left: 1em;
+    label {
+      flex-basis: 100%;
+    }
+    input#email {
+      flex-basis: 100%;
+      width: 100%;
+    }
   }
-  input, textarea {
-    background: $color__background-screen;
+  .comment-form-author {
+    display: flex;
+    flex: 1 0 40%;
+    flex-wrap: wrap;
+    margin-right: 1em;
+    label {
+      flex-basis: 100%;
+    }
+    input#author {
+      width: 100%;
+      flex-basis: 100%;
+    }
   }
+  .comment-form-url {
+    display: flex;
+    flex: 1 0 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-right: 1em;
+    label {
+      flex-basis: 100%;
+    }
+    input#url {
+      width: 100%;
+      flex-basis: 100%;
+    }
+  }
+
 }
+label {
+  color: $brand_color_mgrey;
+  font-weight: bold;
+}
+input, textarea {
+  background: $color__background-screen;
+  // width: 100%;
+}
+
 .form-submit input[type=submit] {
   @include button;
 }
+
+/* Single Post */

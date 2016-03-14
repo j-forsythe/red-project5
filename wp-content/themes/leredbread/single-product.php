@@ -13,18 +13,19 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-      	<header class="entry-header">
+      	<header class="single-header">
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
       		<?php if ( has_post_thumbnail() ) : ?>
       			<?php the_post_thumbnail( 'large' ); ?>
       		<?php endif; ?>
 
-      		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
       	<div class="entry-content">
+					<span class="single-price">Price: <?php echo CFS()->get( 'price' ); ?></span>
       		<?php the_content(); ?>
-          <?php echo CFS()->get( 'price' ); ?>
       	</div><!-- .entry-content -->
-        
+
       </article><!-- #post-## -->
 
 		<?php endwhile; // End of the loop. ?>
