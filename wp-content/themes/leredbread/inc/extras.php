@@ -61,7 +61,6 @@ function lrb_modify_archive_loop( $query ) {
 	elseif (is_post_type_archive( array('testimonial')) && !is_admin()) {
 		$query->set( 'orderby', 'title');
 		$query->set( 'order', 'ASC' );
-		// $query->set( 'posts_per_page', 12 );
 	}
 }
 add_action('pre_get_posts', 'lrb_modify_archive_loop');
