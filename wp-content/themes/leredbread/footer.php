@@ -24,7 +24,7 @@
 		</div><!-- .contact-info -->
 
 		<div class="footer-logo">
-			<img src="<?php echo get_template_directory_uri() .'./assets/images/lrb-logo-white.svg' ?> " alt="Le Red Bread" />
+			<img src="<?php echo get_template_directory_uri() .'/assets/images/lrb-logo-white.svg' ?> " alt="Le Red Bread" />
 		</div><!-- .footer-logo -->
 
 		<div class="business-hours">
