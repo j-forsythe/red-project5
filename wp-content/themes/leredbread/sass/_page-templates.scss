@@ -36,25 +36,30 @@
 .product-grid {
   display: flex;
   flex-wrap: wrap;
-  .archive-product {
-    flex: 1 0 25%;
-    width: 25%;
-    border: $border__solid;
-    .product-info, span {
-      font-family: Open Sans;
-      margin: .25rem;
-      display: flex;
-      justify-content: space-around;
-    }
-    .entry-title:after {
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: clip clip;
-      content: "....................";
-    }
-    .price, .entry-title {
-      white-space:nowrap;
-    }
+}
+
+.archive-product {
+  flex: 0 1 25%;
+  border: $border__solid;
+  overflow: hidden;
+  .product-info {
+    white-space: nowrap;
+    margin: .25rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .product-title {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.product-title {
+  font-family: 'Open Sans';
+  &:after {
+  content: "................................";
+  overflow: hidden;
+  white-space: nowrap;
   }
 }
 

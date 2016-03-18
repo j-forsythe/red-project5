@@ -68,34 +68,36 @@
   .latest-news {
     display: flex;
     background: $color__background-body;
-    .latest-posts {
-      display: flex;
-      flex: 1 0 25%;
-      flex-wrap: wrap;
-      border: $border__solid;
-      padding: .25rem;
-      h4 {
-        font-family: Open Sans;
-        text-align: left;
-        width: 225px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        a {
-          color: $brand_color_mgrey;
-          &:hover {
-            color: $brand_color_red;
-            text-decoration: underline;
-          }
-        }
-      }
-      img {
-        height: 200px;
-        overflow: hidden;
+  }
+}
+
+.latest-posts {
+  display: flex;
+  flex: 1 0 25%;
+  flex-wrap: wrap;
+  border: $border__solid;
+  h4 {
+    font-family: Open Sans;
+    text-align: left;
+    width: 225px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: .25rem;
+    a {
+      color: $brand_color_mgrey;
+      &:hover {
+        color: $brand_color_red;
+        text-decoration: underline;
       }
     }
   }
+  img {
+    height: 200px;
+    overflow: hidden;
+  }
 }
+
 
 .testimonial {
   text-align: center;

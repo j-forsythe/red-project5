@@ -46,7 +46,7 @@ get_header(); ?>
 							</a>
 						<?php endif; ?>
 						<div class="product-info">
-							<?php the_title( '<span class="entry-title">', '</span>' ); ?>
+							<?php the_title( '<span class="product-title">', '</span>' ); ?>
 							<span class="price"><?php echo CFS()->get( 'price' ); ?></span>
 						</div><!--product-info-->
 					</div><!-- archive-product -->

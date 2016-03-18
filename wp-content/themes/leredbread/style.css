@@ -847,28 +847,32 @@ object {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
-  .product-grid .archive-product {
-    -webkit-flex: 1 0 25%;
-        -ms-flex: 1 0 25%;
-            flex: 1 0 25%;
-    width: 25%;
-    border: 1px solid #e1e1e1; }
-    .product-grid .archive-product .product-info, .product-grid .archive-product span {
-      font-family: Open Sans;
-      margin: .25rem;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-justify-content: space-around;
-          -ms-flex-pack: distribute;
-              justify-content: space-around; }
-    .product-grid .archive-product .entry-title:after {
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: clip clip;
-      content: "...................."; }
-    .product-grid .archive-product .price, .product-grid .archive-product .entry-title {
-      white-space: nowrap; }
+
+.archive-product {
+  -webkit-flex: 0 1 25%;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  border: 1px solid #e1e1e1;
+  overflow: hidden; }
+  .archive-product .product-info {
+    white-space: nowrap;
+    margin: .25rem;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .archive-product .product-title {
+    overflow: hidden;
+    white-space: nowrap; }
+
+.product-title {
+  font-family: 'Open Sans'; }
+  .product-title:after {
+    content: "................................";
+    overflow: hidden;
+    white-space: nowrap; }
 
 /*Product Categories */
 .product-category {
@@ -1403,33 +1407,34 @@ input, textarea {
     display: -ms-flexbox;
     display: flex;
     background: #ffffff; }
-    .news-posts .latest-news .latest-posts {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex: 1 0 25%;
-          -ms-flex: 1 0 25%;
-              flex: 1 0 25%;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-      border: 1px solid #e1e1e1;
-      padding: .25rem; }
-      .news-posts .latest-news .latest-posts h4 {
-        font-family: Open Sans;
-        text-align: left;
-        width: 225px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; }
-        .news-posts .latest-news .latest-posts h4 a {
-          color: #808080; }
-          .news-posts .latest-news .latest-posts h4 a:hover {
-            color: #db272a;
-            text-decoration: underline; }
-      .news-posts .latest-news .latest-posts img {
-        height: 200px;
-        overflow: hidden; }
+
+.latest-posts {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 25%;
+      -ms-flex: 1 0 25%;
+          flex: 1 0 25%;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  border: 1px solid #e1e1e1; }
+  .latest-posts h4 {
+    font-family: Open Sans;
+    text-align: left;
+    width: 225px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: .25rem; }
+    .latest-posts h4 a {
+      color: #808080; }
+      .latest-posts h4 a:hover {
+        color: #db272a;
+        text-decoration: underline; }
+  .latest-posts img {
+    height: 200px;
+    overflow: hidden; }
 
 .testimonial {
   text-align: center; }
