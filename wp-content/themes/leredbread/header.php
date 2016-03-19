@@ -24,7 +24,7 @@
 			<div class="site-branding">
 				<div class="logo container">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<a href="<?php home_url(); ?>">
+					<a href="<?php echo esc_url(home_url('/')); ?>">
 						<img src="<?php echo get_template_directory_uri() .'/assets/images/lrb-logo.svg' ?>" alt="Le Red Bread Logo" />
 					</a>
 					<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p> -->

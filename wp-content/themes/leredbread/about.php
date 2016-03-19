@@ -9,7 +9,7 @@ get_header();?>
 	<div class="title">
 		<h2>Learn About Our Team and Culture</h2>
 		<span><?php echo CFS()->get('tagline'); ?></span>
-		<hr></hr>
+		<hr>
 	</div><!-- about-title-->
 	<section class="about-col">
 	<div class="about-info">

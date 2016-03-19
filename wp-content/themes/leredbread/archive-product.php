@@ -18,7 +18,7 @@ get_header(); ?>
 				the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 				<span>We are a team of creative and talented individuals who love making delicious treats.</span>
-				<hr></hr>
+				<hr>
 			</header><!-- .page-header -->
 
 			<section class="product-type">

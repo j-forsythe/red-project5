@@ -44,7 +44,7 @@ get_header(); ?>
 
 			<section class="news-posts">
 				<h2>Our Latest News</h2>
-				<hr></hr>
+				<hr>
 				<div class="latest-news container">
 					<?php
 					$args = array( 'post_type' => 'post', 'posts_per_page' =>4 );
@@ -68,7 +68,7 @@ get_header(); ?>
 				<a href="<?php echo esc_url( home_url( '/testimonial' ) ); ?>" alt="testimonials" class="test-title">
 					<h2>What Others Say About us</h2>
 				</a>
-				<hr></hr>
+				<hr>
 				<?php
 				get_template_part( 'template-parts/home-testimonial' );
 				?>
