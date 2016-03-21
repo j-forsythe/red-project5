@@ -29,18 +29,19 @@
 		text-transform: uppercase;
 		color: $color__text-main;
 	}
+}
 
-	/* LRB Hours */
-	.lrb-hours-class {
-		p {
-			line-height: 1;
-			.day-of-week {
-				color: $brand_color_red;
-				font-weight: bold;
-			}
+/* LRB Hours */
+.lrb-hours-class {
+	p {
+		line-height: 1;
+		span {
+			color: $brand_color_red;
+			font-weight: bold;
 		}
 	}
 }
+
 
 /* Contact Info */
 .fa-ul {

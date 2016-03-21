@@ -4,7 +4,6 @@
 **/
 get_header();?>
 
-
 <div class="content-area about-page container">
 	<div class="title">
 		<h2>Learn About Our Team and Culture</h2>

@@ -6,6 +6,7 @@
 .products-page h2{
   padding-top: 3rem;
 }
+
 .product-type {
   display: flex;
   flex-wrap: wrap;
@@ -13,22 +14,23 @@
   width: 75%;
   justify-content: center;
   margin: 0 auto;
-  .categories {
-    flex: 1 0 25%;
-    padding: 1rem;
-    a {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      img {
-        width: 80%;
-        height: 80%;
-      }
-      h3 {
-        text-transform: uppercase;
-        color: $brand_color_brown;
-        text-align: center;
-      }
+}
+
+.categories {
+  flex: 1 0 25%;
+  padding: 1rem;
+  a {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    img {
+      width: 80%;
+      height: 80%;
+    }
+    h3 {
+      text-transform: uppercase;
+      color: $brand_color_brown;
+      text-align: center;
     }
   }
 }
@@ -57,9 +59,9 @@
 .product-title {
   font-family: 'Open Sans';
   &:after {
-  content: "................................";
-  overflow: hidden;
-  white-space: nowrap;
+    content: "................................";
+    overflow: hidden;
+    white-space: nowrap;
   }
 }
 
@@ -98,41 +100,30 @@
 /*contact form*/
 .wpcf7 {
   width: 750px;
-  .wpcf7-form {
-    font-weight: bold;
-    color: $brand_color_mgrey;
-    input, textarea{
-      background: $color__background-screen;
-    }
+  .wpcf7-submit {
+    @include button;
+  }
+}
 
-    .contact-info {
-      display: flex;
-      justify-content: space-between;
-      .contact-name {
-        margin-right: 1rem;
-      }
-      .contact-name input, .contact-email input{
-        width: 100%;
-      }
-    }
+.wpcf7-form {
+  font-weight: bold;
+  color: $brand_color_mgrey;
+  input, textarea{
+    background: $color__background-screen;
+  }
+  .subject input {
+    width: 100%;
+  }
+}
 
-    .subject input {
-      width: 100%;
-    }
-
-    .wpcf7-submit {
-      color: $color__background-body;
-      background: $brand_color_brown;
-      padding: .75rem 1.5rem;
-      font-weight: normal;
-      box-shadow: none;
-      font-size: 1rem;
-      border-radius: 5px;
-      &:hover {
-        box-shadow: none;
-        filter: brightness(2);
-      }
-    }
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  .contact-name {
+    margin-right: 1rem;
+  }
+  .contact-name input, .contact-email input{
+    width: 100%;
   }
 }
 
@@ -163,15 +154,16 @@
   button.search-submit {
     @include button;
   }
-  .search-form {
-    color: $brand_color_mgrey;
-    fieldset {
-      border: none;
-      padding: 0;
-    }
-    input {
-      padding: .5rem;
-    }
+}
+
+.search-form {
+  color: $brand_color_mgrey;
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+  input {
+    padding: .5rem;
   }
 }
 
@@ -179,36 +171,39 @@
 .testimonial-header {
   border-bottom: $border__dashed;
 }
-  .archive-testimonial {
-    text-align: center;
-    .testimonial-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      text-align: left;
-      padding-bottom: 2rem;
-      .review {
-        display: flex;
-        flex: 1 0 100%;
-        padding: 1.5rem 0;
-        border-bottom: $border__dashed;
-      }
-      img {
-        height: 100px;
-        width: 100px;
-      }
-      .review-info {
-        list-style: none;
-        padding: 0;
-        padding-left: 1rem;
-        .review-name h3 {
-          font-size: 1.75rem;
-          color: $brand_color_mgrey;
-          margin: 0;
-        }
-        .job-title {
-          margin: 1rem 0;
-        }
-      }
-    }
+
+.archive-testimonial {
+  text-align: center;
+  .review {
+    display: flex;
+    flex: 1 0 100%;
+    padding: 1.5rem 0;
+    border-bottom: $border__dashed;
   }
+}
+
+.testimonial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+  padding-bottom: 2rem;
+  img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.review-info {
+  list-style: none;
+  padding: 0;
+  padding-left: 1rem;
+  .review-name h3 {
+    font-size: 1.75rem;
+    color: $brand_color_mgrey;
+    margin: 0;
+  }
+  .job-title {
+    margin: 1rem 0;
+  }
+}

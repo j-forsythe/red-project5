@@ -28,7 +28,7 @@ get_header(); ?>
 					<?php foreach ($terms as $term) : ?>
 						<div class="categories">
 							<a href="<?php echo get_term_link( $term );?>">
-								<img src="<?php echo get_template_directory_uri() . '/assets/images\/'. $term->slug; ?>.png" alt="" />
+								<img src="<?php echo get_template_directory_uri() . '/assets/images\/'. $term->slug; ?>.png" alt="">
 								<h3><?php echo $term->name; ?></h3>
 							</a>
 						</div><!--categories -->
@@ -41,7 +41,7 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<div class="archive-product">
 						<?php if ( has_post_thumbnail() ) : ?>
-							<a href="<?php the_permalink() ?>" alt=""/>
+							<a href="<?php the_permalink() ?>">
 								<?php the_post_thumbnail( 'small' ); ?>
 							</a>
 						<?php endif; ?>

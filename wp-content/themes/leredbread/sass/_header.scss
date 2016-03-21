@@ -5,28 +5,31 @@
 .site-header {
   background: $color__background-screen;
   padding-top: 2rem;
-  .site-branding {
-    border-top: $border__solid;
-    background: $color__background-body;
-    .logo{
-      display: flex;
-      justify-content: space-between;
-      padding: 1rem 0;
-    }
-    img {
-      width: 300px;
-    }
-    .header-social {
-      list-style: none;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      color: $brand_color_mgrey;
-      margin: 0;
-      li {
-        margin: 1rem;
-      }
-    }
+}
+
+.site-branding {
+  border-top: $border__solid;
+  background: $color__background-body;
+  img {
+    width: 300px;
+  }
+}
+
+.logo{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.header-social {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: $brand_color_mgrey;
+  margin: 0;
+  li {
+    margin: 1rem;
   }
 }
 
@@ -34,55 +37,56 @@
   background: $color__background-screen;
   border-top: $border__solid;
   box-shadow: 0 2px 5px 0 rgba(128, 125, 131, 0.42);
-  .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    button {
-      background: transparent;
-      border: none;
-      box-shadow: none;
-      font-size: 1rem;
-      color: $brand_color_mgrey;
-      &:hover {
-        filter: brightness(1);
-      }
-    }
-    fieldset {
-      border: none;
-      padding: 0;
-      input {
-        border: none;
-        background: transparent;
-        font-family: Open Sans;
-        font-weight: normal;
-        &:focus {
-          outline: none;
-        }
-      }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  button {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    font-size: 1rem;
+    color: $brand_color_mgrey;
+    &:hover {
+      filter: brightness(1);
     }
   }
-  .menu {
-    .menu-item {
-      padding: 0.75rem 1.5rem;
-      border-right: $border__solid;
-      height: 100%;
-      a {
-        font-weight: bold;
-        color: $brand_color_mgrey;
-        &:hover {
-          color: $brand_color_brown;
-        }
-      }
-      &:first-child {
-        border-left: $border__solid;
-      }
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+  input {
+    border: none;
+    background: transparent;
+    font-family: Open Sans;
+    font-weight: normal;
+    &:focus {
+      outline: none;
     }
-    .current-menu-item {
-      box-shadow: inset 0 -3px $brand_color_red;
-      a {
-        color: $brand_color_brown;
-      }
+  }
+}
+
+.menu-item {
+  padding: 0.75rem 1.5rem;
+  border-right: $border__solid;
+  height: 100%;
+  a {
+    font-weight: bold;
+    color: $brand_color_mgrey;
+    &:hover {
+      color: $brand_color_brown;
     }
+  }
+  &:first-child {
+    border-left: $border__solid;
+  }
+}
+
+.current-menu-item {
+  box-shadow: inset 0 -3px $brand_color_red;
+  a {
+    color: $brand_color_brown;
   }
 }

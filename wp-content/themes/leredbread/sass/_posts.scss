@@ -52,22 +52,31 @@
     padding: 0;
     margin: 0;
   }
-  .comment-body {
-    display: flex;
-    width: 90%;
-    border-bottom: $border__dashed;
-    .comment-author-avatar img{
-      border-radius: 50%;
-      margin-right: 1.5rem;
-    }
-    .fn {
-      font-weight: bold;
-      font-style: normal;
-    }
-    .comment-metadata {
-      color: $brand_color_lgrey;
-    }
+  label {
+    color: $brand_color_mgrey;
+    font-weight: bold;
   }
+  input, textarea {
+    background: $color__background-screen;
+  }
+}
+
+.comment-body {
+  display: flex;
+  width: 90%;
+  border-bottom: $border__dashed;
+  .comment-author-avatar img{
+    border-radius: 50%;
+    margin-right: 1.5rem;
+  }
+  .fn {
+    font-weight: bold;
+    font-style: normal;
+  }
+  .comment-metadata {
+    color: $brand_color_lgrey;
+  }
+}
 
   .comment-reply-title {
     color: $brand_color_brown;
@@ -129,16 +138,6 @@
       flex-basis: 100%;
     }
   }
-
-}
-label {
-  color: $brand_color_mgrey;
-  font-weight: bold;
-}
-input, textarea {
-  background: $color__background-screen;
-  // width: 100%;
-}
 
 .form-submit input[type=submit] {
   @include button;

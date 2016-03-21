@@ -16,11 +16,11 @@
 			<div class="contact-info-wrapper">
 				<?php dynamic_sidebar('sidebar-2'); ?>
 			</div>
-			<p class="footer-social">
+			<div class="footer-social">
 				<i class="fa fa-facebook-square"></i>
 				<i class="fa fa-twitter-square"></i>
 				<i class="fa fa-google-plus-square"></i>
-			</p>
+			</div>
 		</div><!-- .contact-info -->
 
 		<div class="footer-logo">

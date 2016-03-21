@@ -6,25 +6,27 @@
   background: $brand_color_blackish;
   color: $color__background-body;
   line-height: 1rem;
-  .site-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 0;
-    font-size: 1rem;
-    h3 {
-      font-family: Overlock;
-      text-transform: uppercase;
-      color: $brand_color_mgrey;
-      margin-bottom: 0.75rem;
-    }
-    p {
-      margin-bottom: 0.5rem;
-    }
+}
+
+.site-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  font-size: 1rem;
+  h3 {
+    font-family: Overlock;
+    text-transform: uppercase;
+    color: $brand_color_mgrey;
+    margin-bottom: 0.75rem;
+  }
+  p {
+    margin-bottom: 0.5rem;
   }
 }
 
 .contact-info {
+  flex-direction: column;
   .footer-social {
     font-size: 1.25rem;
     letter-spacing: .25rem;
@@ -45,10 +47,9 @@
   }
 }
 
-.business-hours {
-  span {
-    font-weight: bold;
-  }
+.business-hours .day-of-week{
+  font-weight: bold;
+    color: white;
 }
 
 .copy {
